@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;700&display=swap');
+
+:root{
+	--Darkcyan: hsl(185, 75%, 39%);
+	--Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+	--Darkgrayishblue: hsl(227, 10%, 46%);
+	--Darkgray: hsl(0, 0%, 59%);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-color: var(--Darkcyan);
+	background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 48vw top 45vh;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+}
+
+.main-container{
+	width: 326px;
+	height: 374px;
+	border-radius: 14px;
+	margin: 147px auto 50px;
+	position: relative;
+	overflow: hidden;
+}
+.bubbles{
+	background: url(images/bg-pattern-card.svg);
+	height: 140px;
+}
+.photo{
+	position: absolute;
+	border: 5px solid white;
+	top: 87px;
+	left: 35%;
+	height: 96px;
+	border-radius: 50%;
+	border: 5px solid white;
+	overflow: hidden;
+}
+.information-container{
+	background-color: white;
+	text-align: center;
+	height: 150px;
+	padding-top: 71px;
+}
+
+.name{
+	color: var(--Verydarkdesaturatedblue);
+	font-weight: 700;
+}
+
+.age{
+	color: var(--Darkgray);
+}
+.city{
+	color: var(--Darkgray);
+	font-size: 0.9;
+}
+.numbers-container{
+	display: flex;
+	background-color: white;
+	border-top: 1px solid var(--Darkgray);
+	align-items: center;
+	justify-content: space-around;
+	height: 90px;
+	margin-top: -4px;
+	padding: 0 20px 0 20px ;
+}
+.statistics{
+  text-align: center;
+}
+.topic{
+	font-size: 0.55em;
+	color: var(--Darkgray);
+	letter-spacing: 1.5px;
+}
+.numbers{
+	color: var(--Verydarkdesaturatedblue);
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+.city{
+	margin-top: 10px;
+	font-size: 0.8em;
+}
+.attribution { 
+	font-size: 11px;
+  text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+@media only screen and (min-width:700px){
+	body{
+		background-position: right 45vw bottom 40vh, left 44vw top 45vh;
+	}
+	.main-container{
+		width: 352px;
+		margin: 172px auto;
+	}
+	.photo{
+    height: 105px;
+	}
+	
+}
